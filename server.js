@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('./config');
 const app = express();
+const nodeMCU = require('./nodeMCU');
 
 // Development only
 if (process.env.NODE_ENV === 'development') {
@@ -14,7 +15,8 @@ if (process.env.NODE_ENV === 'development') {
 
 const server = app.listen(process.env.PORT || config.port, function() {
 	let port = process.env.PORT || config.port;
-	console.log('Socket server listening at: ' + port);
+  console.log('Socket server listening at: ' + port);
+  nodeMCU();
 });
 
 const io = require('socket.io')(server);

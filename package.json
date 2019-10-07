@@ -10,7 +10,7 @@
     "node:mcu": "node nodeMCU.js",
 		"build:js": "npm run clean && webpack -p",
 		"node:dev": "SET NODE_ENV=development&&concurrently --kill-others \"npm run dev\" \"node node-mcu.js\"",
-		"start": "npm-run-all server node:mcu"
+		"start": "node server.js"
 	},
 	"repository": "",
 	"author": "Tashila Fernando",
