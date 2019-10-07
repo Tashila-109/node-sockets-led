@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('./config');
 const app = express();
+const nodeMCU = require('./nodeMCU')
 
 // Development only
 if (process.env.NODE_ENV === 'development') {
@@ -34,3 +35,5 @@ io.of('/node-mcu').on('connection', (socket) => {
   });
 
 });
+
+nodeMCU();
