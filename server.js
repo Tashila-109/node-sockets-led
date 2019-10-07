@@ -20,7 +20,7 @@ const server = app.listen(process.env.PORT || config.port, function() {
 
 const io = require('socket.io')(server);
 
-io.of('/node-mcu').on('connection', (socket) => {
+io.of('/nodeMCU').on('connection', (socket) => {
 
   console.log('New connection: ' + socket.id);
 

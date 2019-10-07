@@ -1,6 +1,6 @@
-'use strict';
-
 module.exports = () => {
+	'use strict';
+
 	const io = require('socket.io-client');
 	const five = require('johnny-five');
 	const { EtherPortClient } = require('etherport-client');
@@ -35,4 +35,3 @@ module.exports = () => {
 		});
 	});
 };
-

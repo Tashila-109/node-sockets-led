@@ -1,12 +1,12 @@
 const development = {
   host: 'http://localhost',
-  namespace: 'node-mcu', // For socket.io
+  namespace: 'nodeMCU', // For socket.io
   port: 3000
 };
 
 const production = {
   host: 'https://nodesockets-tashila.herokuapp.com', // Replace
-  namespace: 'node-mcu' // For socket.io
+  namespace: 'nodeMCU' // For socket.io
 };
 
 const config = process.env.NODE_ENV === 'development' ? development : production;
