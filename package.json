@@ -6,7 +6,7 @@
 	"scripts": {
 		"clean": "rimraf dist",
 		"dev": "SET NODE_ENV=development&&node server.js",
-		"build": "npm run clean && webpack -p",
+		"build:js": "npm run clean && webpack -p",
 		"node:dev": "SET NODE_ENV=development&&concurrently --kill-others \"npm run dev\" \"node node-mcu.js\"",
 		"start": "node node-mcu.js"
 	},
