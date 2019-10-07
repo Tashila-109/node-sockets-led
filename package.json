@@ -6,9 +6,9 @@
 	"scripts": {
 		"clean": "rimraf dist",
 		"dev": "SET NODE_ENV=development&&node server.js",
-		"build": "SET NODE_ENV=production&&npm run clean && webpack -p",
+		"build": "npm run clean && webpack -p",
 		"node:dev": "SET NODE_ENV=development&&concurrently --kill-others \"npm run dev\" \"node node-mcu.js\"",
-		"start": "SET NODE_ENV=production&&node node-mcu.js"
+		"start": "node node-mcu.js"
 	},
 	"repository": "",
 	"author": "Tashila Fernando",
