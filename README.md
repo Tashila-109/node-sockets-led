@@ -33,7 +33,7 @@ Starts a local server for this project and runs the node-mcu.js file
 npm run node:dev
 ```
 
-Runs the arduino.js file without starting a local server, instead, the script connects to the production server.
+Runs the node-mcu.js file without starting a local server, instead, the script connects to the production server.
 
 ```
 npm run node
