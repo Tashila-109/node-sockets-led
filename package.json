@@ -5,10 +5,11 @@
 	"main": "src/index.js",
 	"scripts": {
 		"clean": "rimraf dist",
-		"dev": "SET NODE_ENV=development&&node server.js",
+    "dev": "SET NODE_ENV=development&&node server.js",
+    "server": "node server.js",
 		"build:js": "npm run clean && webpack -p",
 		"node:dev": "SET NODE_ENV=development&&concurrently --kill-others \"npm run dev\" \"node node-mcu.js\"",
-		"start": "node node-mcu.js"
+		"start": "npm run server && node-mcu.js"
 	},
 	"repository": "",
 	"author": "Tashila Fernando",
