@@ -5,7 +5,7 @@ const development = {
 };
 
 const production = {
-  host: 'https://arduino-sockets.herokuapp.com', // Replace
+  host: 'https://nodesocket-tashila.herokuapp.com', // Replace
   namespace: 'node-mcu' // For socket.io
 };
 
